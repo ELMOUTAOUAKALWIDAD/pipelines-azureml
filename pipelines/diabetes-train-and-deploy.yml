@@ -21,8 +21,8 @@ steps:
     azureSubscription: $(ml-ws-connection)
     scriptLocation: inlineScript
     scriptType: 'bash'
-    run: az extension add -s https://azurecliext.blob.core.windows.net/release/azure_cli_ml-1.15.0-py3-
-none-any.whl -y
+    inlineScript: 'az extension add -s https://azurecliext.blob.core.windows.net/release/azure_cli_ml-1.15.0-py3-
+none-any.whl -y'
 
     inlineScript: 'az extension add -n azure-cli-ml'
 
