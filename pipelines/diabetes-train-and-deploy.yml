@@ -1,11 +1,11 @@
 variables:
-  ml-ws-connection: 'service-connection-demo' # Workspace Service Connection name
-  ml-ws: 'Mlops-Azure' # AML Workspace name
-  ml-rg: 'WdMlops' # AML resource Group name
-  ml-ct: 'cpu-cluster-3' # AML Compute cluster name
+  ml-ws-connection: 'mlazureconnection' # Workspace Service Connection name
+  ml-ws: 'ml-worskpacewe' # AML Workspace name
+  ml-rg: 'ml-azurew' # AML resource Group name
+  ml-ct: 'cpu-cluster-1' # AML Compute cluster name
   ml-path: 'models/diabetes' # Model directory path in repo
-  ml-exp: 'exp-testt' # Experiment name
-  ml-model-name: 'diabetes-modell' # Model name
+  ml-exp: 'exp-test' # Experiment name
+  ml-model-name: 'diabetes-model' # Model name
   ml-aks-name: 'aks-prod' # AKS cluster name
 
 trigger:
@@ -21,9 +21,6 @@ steps:
     azureSubscription: $(ml-ws-connection)
     scriptLocation: inlineScript
     scriptType: 'bash'
-    inlineScript: 'az extension add -s https://azurecliext.blob.core.windows.net/release/azure_cli_ml-1.15.0-py3-
-none-any.whl -y'
-
     inlineScript: 'az extension add -n azure-cli-ml'
 
 - task: AzureCLI@2
