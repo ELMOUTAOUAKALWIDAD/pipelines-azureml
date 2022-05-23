@@ -6,4 +6,4 @@ dependencies:
     - scikit-learn==0.21.3
     - numpy
     - inference-schema[numpy-support]
-    -pillow
+    -pillow==5.4.1
