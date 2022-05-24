@@ -18,12 +18,13 @@ name: project_environment
 dependencies:
   # The python interpreter version.
   # Currently Azure ML Workbench only supports 3.5.2 and later.
-  - python=3.5.*
+  - python=3.6.*
   - pip=20.2.4
         
 channels:
-  - conda-forge
   - defaults
+  - anaconda
+  - conda-forge
 
   - pip:
       # Base AzureML SDK
@@ -31,7 +32,9 @@ channels:
 
       # Must match AzureML SDK version.
       # https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments
-      - azureml-defaults
+      - azureml-defaults==1.19.0
+      - azureml-core==1.19.0
+      - azureml-widgets==1.19.0
 
       # Training deps
       - scikit-learn
@@ -53,5 +56,3 @@ channels:
       
        # Job lib- whatever I don't know what we use it for
       - pandas
-
-      
