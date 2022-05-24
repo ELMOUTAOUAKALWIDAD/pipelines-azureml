@@ -6,33 +6,11 @@ dependencies:
   - pip=20.2.4
 
   - pip:
-      # Base AzureML SDK
-      - azureml-sdk
-
-      # Must match AzureML SDK version.
-      # https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments
-      - azureml-defaults
-
-      # Training deps
-      - scikit-learn
-
-      # Scoring deps
-      - inference-schema[numpy-support]
-
-      # MLOps with R
-      - azure-storage-blob
-
-      # LightGBM bosting lib
-      - lightgbm
-
-      # lightgbm Caps because we are throwing darts
-      - LightGBM
-
-      # Job lib- whatever I don't know what we use it for
-      - joblib
-      
-       # Job lib- whatever I don't know what we use it for
-      - pandas
-      
-      
+    - azureml-defaults
+    - azureml-sdk
+    - scikit-learn==0.21.3
+    - numpy
+    - inference-schema[numpy-support]
+    - conda=4.12.0
+    - pandas      
       
