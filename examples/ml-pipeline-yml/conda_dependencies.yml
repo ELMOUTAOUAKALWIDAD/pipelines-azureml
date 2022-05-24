@@ -32,9 +32,9 @@ channels:
 
       # Must match AzureML SDK version.
       # https://docs.microsoft.com/en-us/azure/machine-learning/concept-environments
-      - azureml-defaults==1.19.0
-      - azureml-core==1.19.0
-      - azureml-widgets==1.19.0
+      - azureml-defaults
+      - azureml-core
+      - azureml-widgets
 
       # Training deps
       - scikit-learn
