@@ -49,5 +49,8 @@ dependencies:
       
        # Job lib- whatever I don't know what we use it for
       - pandas
+      
+channels:
+  - conda-forge
 
       
