@@ -20,6 +20,10 @@ dependencies:
   # Currently Azure ML Workbench only supports 3.5.2 and later.
   - python=3.5.*
   - pip=20.2.4
+        
+channels:
+  - conda-forge
+  - defaults
 
   - pip:
       # Base AzureML SDK
@@ -49,8 +53,5 @@ dependencies:
       
        # Job lib- whatever I don't know what we use it for
       - pandas
-      
-channels:
-  - conda-forge
 
       
