@@ -11,6 +11,6 @@ dependencies:
     - scikit-learn==0.21.3
     - numpy
     - inference-schema[numpy-support]
-    - conda=4.5.0
+    - conda=4.5.11
     - pandas      
       
